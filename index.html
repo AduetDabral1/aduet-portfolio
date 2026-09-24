@@ -59,26 +59,26 @@
     }
 
     [data-theme="light"] {
-      /* LIGHT THEME: Aqua / Sea Blue, Grey & PURE BLACK TEXT */
-      --bg: #f8fafc;
-      --bg-subtle: #f1f5f9;
-      --surface: rgba(255, 255, 255, 0.94);
-      --surface-hover: rgba(255, 255, 255, 0.98);
-      --surface-solid: #ffffff;
-      --card-inner: rgba(241, 245, 249, 0.95);
+      /* LIGHT THEME: Muted Warm Beige & Taupe Background, Cream Cards & PURE BLACK TEXT */
+      --bg: #f7f4ee;
+      --bg-subtle: #ede8df;
+      --surface: rgba(253, 250, 244, 0.94);
+      --surface-hover: rgba(255, 253, 248, 0.98);
+      --surface-solid: #faf6ee;
+      --card-inner: #f4eee2;
 
-      /* Aqua / Sea Blue Palette */
-      --accent: #0891b2;
-      /* Vibrant Sea-Blue Aqua */
-      --accent-glow: #06b6d4;
-      /* Radiant Cyan Aqua */
-      --accent-dark: #0e7490;
-      /* Deep Ocean Aqua */
-      --accent-deep: #155e75;
-      /* Dark Ocean Aqua */
-      --accent-subtle: rgba(8, 145, 178, 0.15);
-      --line: rgba(8, 145, 178, 0.35);
-      --line-light: rgba(15, 23, 42, 0.14);
+      /* Muted Beige & Warm Taupe Line & Card Tokens */
+      --accent: #8c6d48;
+      /* Muted Warm Bronze / Taupe */
+      --accent-glow: #bda282;
+      /* Radiant Warm Sand Glow */
+      --accent-dark: #6e5334;
+      /* Deep Earth Taupe */
+      --accent-deep: #543f25;
+      /* Darkest Earth Taupe */
+      --accent-subtle: rgba(190, 170, 142, 0.2);
+      --line: rgba(185, 165, 138, 0.45);
+      --line-light: rgba(170, 150, 125, 0.22);
 
       /* Backward-compatible variable aliases */
       --green: var(--accent);
@@ -91,9 +91,9 @@
       --text: #000000 !important;
       --text-muted: #1e293b !important;
       --text-dim: #334155 !important;
-      --glass-border: 1px solid rgba(8, 145, 178, 0.35);
-      --card-shadow: 0 12px 32px rgba(8, 145, 178, 0.12);
-      --nav-bg: rgba(248, 250, 252, 0.94);
+      --glass-border: 1px solid rgba(190, 170, 142, 0.45);
+      --card-shadow: 0 14px 34px rgba(120, 100, 75, 0.08);
+      --nav-bg: rgba(247, 244, 238, 0.94);
     }
 
     * {
@@ -426,9 +426,9 @@
       transition: filter 0.5s ease;
     }
 
-    /* LIGHT MODE: Glowing Aqua / Sea Blue Lighting across Triple Monitors */
+    /* LIGHT MODE: Warm Golden Beige / Taupe Lighting across Triple Monitors */
     [data-theme="light"] .hero-bg-media {
-      filter: brightness(1.05) contrast(1.08) saturate(1.15);
+      filter: brightness(1.02) contrast(1.04);
     }
 
     .hero-ambient-glow {
@@ -445,8 +445,8 @@
     }
 
     [data-theme="light"] .hero-ambient-glow {
-      opacity: 0.9;
-      background: radial-gradient(circle at 50% 60%, rgba(6, 182, 212, 0.35) 0%, transparent 75%);
+      opacity: 0.88;
+      background: radial-gradient(circle at 50% 60%, rgba(214, 192, 160, 0.35) 0%, rgba(188, 164, 134, 0.12) 45%, transparent 75%);
     }
 
     /* Full Width HUD Wrapper */
@@ -603,21 +603,26 @@
     }
 
     [data-theme="light"] .hero-avatar-frame {
-      border-color: rgba(8, 145, 178, 0.45);
-      box-shadow: 0 16px 40px rgba(8, 145, 178, 0.25), 0 0 30px rgba(8, 145, 178, 0.2);
+      border-color: rgba(195, 172, 142, 0.65);
+      box-shadow: 0 16px 40px rgba(130, 110, 85, 0.14), 0 0 25px rgba(220, 200, 170, 0.35);
+      background: #faf6ee;
     }
 
     [data-theme="light"] .hero-center-profile:hover .hero-avatar-frame {
-      border-color: var(--green);
-      box-shadow: 0 20px 48px rgba(8, 145, 178, 0.35), 0 0 40px rgba(8, 145, 178, 0.3);
+      border-color: rgba(165, 140, 110, 0.85);
+      box-shadow: 0 20px 48px rgba(130, 110, 85, 0.2), 0 0 35px rgba(220, 200, 170, 0.5);
     }
 
     [data-theme="light"] .hero-center-badge {
-      background: rgba(255, 255, 255, 0.94);
-      border-color: rgba(8, 145, 178, 0.3);
+      background: rgba(253, 250, 244, 0.95);
+      border-color: rgba(190, 170, 142, 0.45);
       color: #000000 !important;
       font-weight: 600;
-      box-shadow: 0 6px 18px rgba(8, 145, 178, 0.12);
+      box-shadow: 0 6px 18px rgba(130, 110, 85, 0.08);
+    }
+
+    [data-theme="light"] .hud-floating-card:hover {
+      border-color: rgba(165, 140, 110, 0.85);
     }
 
     /* Slender, Longer, Almost Transparent Glass Cards */
@@ -742,8 +747,8 @@
     }
 
     [data-theme="light"] .project-mini-thumb {
-      border-color: rgba(8, 145, 178, 0.3);
-      box-shadow: 0 4px 10px rgba(8, 145, 178, 0.1);
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 4px 12px rgba(130, 110, 85, 0.08);
     }
 
     .project-mini-content h4 {
@@ -886,9 +891,9 @@
     }
 
     [data-theme="light"] .contact-flyout-card {
-      background: rgba(255, 255, 255, 0.96);
-      border-color: rgba(8, 145, 178, 0.35);
-      box-shadow: 0 16px 45px rgba(8, 145, 178, 0.18);
+      background: rgba(253, 250, 244, 0.97);
+      border-color: rgba(190, 170, 142, 0.5);
+      box-shadow: 0 16px 45px rgba(130, 110, 85, 0.12);
     }
 
     .contact-flyout-card::after {
@@ -985,8 +990,8 @@
     }
 
     [data-theme="light"] .contact-flyout-item {
-      background: #f8fafc;
-      border-color: rgba(8, 145, 178, 0.2);
+      background: #f4eee2;
+      border-color: rgba(190, 170, 142, 0.35);
     }
 
     [data-theme="light"] .contact-flyout-item .flyout-val {
@@ -1021,9 +1026,9 @@
       transition: filter 0.5s ease;
     }
 
-    /* LIGHT MODE: Glowing Aqua / Sea Blue Lighting */
+    /* LIGHT MODE: Warm Golden Beige / Taupe Lighting */
     [data-theme="light"] .arch-bg-media {
-      filter: brightness(0.92) contrast(1.05) saturate(1.12);
+      filter: brightness(0.95) contrast(1.05);
     }
 
     .arch-ambient-glow {
@@ -1040,8 +1045,8 @@
     }
 
     [data-theme="light"] .arch-ambient-glow {
-      opacity: 0.85;
-      background: radial-gradient(circle at 50% 65%, rgba(6, 182, 212, 0.32) 0%, transparent 70%);
+      opacity: 0.82;
+      background: radial-gradient(circle at 50% 65%, rgba(214, 192, 160, 0.32) 0%, rgba(188, 164, 134, 0.10) 45%, transparent 70%);
     }
 
     .arch-content-container {
@@ -1063,7 +1068,18 @@
       border: 3.5px solid var(--green);
       box-shadow: 0 0 35px rgba(4, 120, 87, 0.45);
       background: #020a06;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    [data-theme="light"] .arch-avatar-frame {
+      border-color: rgba(195, 172, 142, 0.7);
+      box-shadow: 0 12px 35px rgba(130, 110, 85, 0.16), 0 0 30px rgba(220, 200, 170, 0.35);
+      background: #faf6ee;
+    }
+
+    [data-theme="light"] .arch-avatar-frame:hover {
+      border-color: rgba(165, 140, 110, 0.9);
+      box-shadow: 0 16px 45px rgba(130, 110, 85, 0.22), 0 0 40px rgba(220, 200, 170, 0.5);
     }
 
     .arch-avatar-frame:hover {
@@ -1115,10 +1131,10 @@
     }
 
     [data-theme="light"] .arch-summary-box {
-      background: rgba(0, 0, 0, 0.05);
-      /* 5% opaque transparent box */
-      border: 1px solid rgba(8, 145, 178, 0.35);
-      box-shadow: 0 10px 30px rgba(8, 145, 178, 0.1);
+      background: rgba(253, 250, 244, 0.88);
+      /* Translucent cream box */
+      border: 1px solid rgba(190, 170, 142, 0.45);
+      box-shadow: 0 10px 30px rgba(130, 110, 85, 0.08);
     }
 
     .arch-summary-p {
@@ -1368,22 +1384,22 @@
       color: var(--green);
     }
 
-    /* LIGHT MODE: 3D Carousel Cards with Crisp Black Text */
+    /* LIGHT MODE: 3D Carousel Cards with Cream Surface & Muted Beige Highlights */
     [data-theme="light"] .arch-card-3d {
-      background: #ffffff;
-      border-color: rgba(8, 145, 178, 0.28);
-      box-shadow: 0 16px 36px rgba(8, 145, 178, 0.16);
+      background: #faf6ee;
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 16px 36px rgba(130, 110, 85, 0.10);
     }
 
     [data-theme="light"] .card-tab-notch {
-      background: rgba(255, 255, 255, 0.95);
-      border-color: rgba(8, 145, 178, 0.35);
+      background: rgba(253, 250, 244, 0.96);
+      border-color: rgba(190, 170, 142, 0.45);
       color: #000000 !important;
-      box-shadow: 0 4px 12px rgba(8, 145, 178, 0.12);
+      box-shadow: 0 4px 12px rgba(130, 110, 85, 0.08);
     }
 
     [data-theme="light"] .card-bottom-content {
-      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.88) 35%, rgba(255, 255, 255, 0.98) 100%);
+      background: linear-gradient(180deg, transparent 0%, rgba(250, 246, 238, 0.88) 35%, rgba(250, 246, 238, 0.98) 100%);
     }
 
     [data-theme="light"] .arch-card-h3 {
@@ -1392,7 +1408,7 @@
     }
 
     [data-theme="light"] .arch-card-sub {
-      color: #0891b2 !important;
+      color: #8c6d48 !important;
       text-shadow: none !important;
     }
 
@@ -1403,14 +1419,14 @@
 
     [data-theme="light"] .arch-card-action-bar {
       color: #000000 !important;
-      border-top-color: rgba(8, 145, 178, 0.25);
+      border-top-color: rgba(190, 170, 142, 0.35);
     }
 
     [data-theme="light"] .carousel-side-nav {
-      background: rgba(255, 255, 255, 0.95);
-      border-color: rgba(8, 145, 178, 0.35);
+      background: rgba(253, 250, 244, 0.96);
+      border-color: rgba(190, 170, 142, 0.45);
       color: #000000 !important;
-      box-shadow: 0 8px 24px rgba(8, 145, 178, 0.15);
+      box-shadow: 0 8px 24px rgba(130, 110, 85, 0.08);
     }
 
     [data-theme="light"] .carousel-side-nav:hover {
@@ -1419,9 +1435,9 @@
     }
 
     [data-theme="light"] .carousel-stats-dock {
-      background: rgba(255, 255, 255, 0.95);
-      border-color: rgba(8, 145, 178, 0.35);
-      box-shadow: 0 10px 30px rgba(8, 145, 178, 0.12);
+      background: rgba(253, 250, 244, 0.96);
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 10px 30px rgba(130, 110, 85, 0.08);
     }
 
     [data-theme="light"] .dock-stat-chip {
@@ -1433,7 +1449,7 @@
     }
 
     [data-theme="light"] .dock-stat-chip svg {
-      color: #0891b2 !important;
+      color: #8c6d48 !important;
     }
 
     /* ========================================================
@@ -1456,12 +1472,12 @@
     }
 
     [data-theme="light"] .skills-matrix-section {
-      background-color: #f8fafc;
+      background-color: #f7f4ee;
       background-image:
-        radial-gradient(circle at 50% 0%, rgba(8, 145, 178, 0.14) 0%, transparent 65%),
-        linear-gradient(90deg, rgba(8, 145, 178, 0.1) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(8, 145, 178, 0.1) 1px, transparent 1px),
-        radial-gradient(rgba(8, 145, 178, 0.28) 1.5px, transparent 1.5px);
+        radial-gradient(circle at 50% 0%, rgba(196, 172, 142, 0.22) 0%, transparent 65%),
+        linear-gradient(90deg, rgba(168, 148, 126, 0.12) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(168, 148, 126, 0.12) 1px, transparent 1px),
+        radial-gradient(rgba(156, 134, 112, 0.22) 1.5px, transparent 1.5px);
       background-size: 100% 100%, 48px 48px, 48px 48px, 24px 24px;
     }
 
@@ -1512,9 +1528,13 @@
     }
 
     [data-theme="light"] .skill-cat-card {
-      background: rgba(255, 255, 255, 0.94);
-      border-color: rgba(8, 145, 178, 0.3);
-      box-shadow: 0 10px 30px rgba(8, 145, 178, 0.08);
+      background: rgba(253, 250, 244, 0.95);
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 10px 30px rgba(130, 110, 85, 0.06);
+    }
+
+    [data-theme="light"] .skill-cat-card:hover {
+      border-color: rgba(165, 140, 110, 0.85);
     }
 
     .skill-cat-head {
@@ -1555,9 +1575,13 @@
     }
 
     [data-theme="light"] .skill-badge-item {
-      background: #ffffff;
-      border-color: rgba(8, 145, 178, 0.25);
-      box-shadow: 0 2px 6px rgba(8, 145, 178, 0.06);
+      background: #faf6ee;
+      border-color: rgba(190, 170, 142, 0.35);
+      box-shadow: 0 2px 6px rgba(130, 110, 85, 0.05);
+    }
+
+    [data-theme="light"] .skill-badge-item:hover {
+      border-color: rgba(165, 140, 110, 0.85);
     }
 
     .skill-badge-item:hover {
@@ -1596,11 +1620,11 @@
     }
 
     [data-theme="light"] .skills-graph-section {
-      background-color: #f1f5f9;
+      background-color: #ede8df;
       background-image:
-        radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.18) 0%, rgba(8, 145, 178, 0.06) 35%, transparent 70%),
-        repeating-radial-gradient(circle at 50% 50%, transparent 0, transparent 58px, rgba(8, 145, 178, 0.16) 59px, rgba(8, 145, 178, 0.16) 60px),
-        radial-gradient(rgba(8, 145, 178, 0.3) 1px, transparent 1px);
+        radial-gradient(circle at 50% 50%, rgba(196, 172, 142, 0.24) 0%, rgba(168, 148, 126, 0.08) 35%, transparent 70%),
+        repeating-radial-gradient(circle at 50% 50%, transparent 0, transparent 58px, rgba(168, 148, 126, 0.16) 59px, rgba(168, 148, 126, 0.16) 60px),
+        radial-gradient(rgba(156, 134, 112, 0.22) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 36px 36px;
     }
 
@@ -1616,9 +1640,9 @@
     }
 
     [data-theme="light"] .graph-card-wrapper {
-      background: rgba(255, 255, 255, 0.94);
-      border-color: rgba(8, 145, 178, 0.3);
-      box-shadow: 0 16px 45px rgba(8, 145, 178, 0.12);
+      background: rgba(253, 250, 244, 0.95);
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 16px 45px rgba(130, 110, 85, 0.08);
     }
 
     .graph-svg-container {
@@ -1662,8 +1686,8 @@
     }
 
     [data-theme="light"] .g-node circle.g-node-circle {
-      fill: #ffffff;
-      stroke: rgba(8, 145, 178, 0.45);
+      fill: #faf6ee;
+      stroke: rgba(185, 160, 135, 0.55);
     }
 
     .g-node:hover circle.g-node-circle,
@@ -1732,13 +1756,13 @@
     }
 
     [data-theme="light"] .projects-section {
-      background-color: #f8fafc;
+      background-color: #f7f4ee;
       background-image:
-        radial-gradient(circle at 80% 20%, rgba(8, 145, 178, 0.16) 0%, transparent 55%),
-        linear-gradient(135deg, rgba(8, 145, 178, 0.04) 25%, transparent 25%),
-        linear-gradient(225deg, rgba(8, 145, 178, 0.04) 25%, transparent 25%),
-        linear-gradient(90deg, rgba(8, 145, 178, 0.12) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(8, 145, 178, 0.12) 1px, transparent 1px);
+        radial-gradient(circle at 80% 20%, rgba(196, 172, 142, 0.22) 0%, transparent 55%),
+        linear-gradient(135deg, rgba(168, 148, 126, 0.05) 25%, transparent 25%),
+        linear-gradient(225deg, rgba(168, 148, 126, 0.05) 25%, transparent 25%),
+        linear-gradient(90deg, rgba(168, 148, 126, 0.12) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(168, 148, 126, 0.12) 1px, transparent 1px);
       background-size: 100% 100%, 64px 64px, 64px 64px, 128px 128px, 128px 128px;
     }
 
@@ -1762,9 +1786,14 @@
     }
 
     [data-theme="light"] .project-card {
-      background: rgba(255, 255, 255, 0.95);
-      border-color: rgba(8, 145, 178, 0.3);
-      box-shadow: 0 12px 35px rgba(8, 145, 178, 0.1);
+      background: rgba(253, 250, 244, 0.96);
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 14px 35px rgba(130, 110, 85, 0.08);
+    }
+
+    [data-theme="light"] .project-card:hover {
+      border-color: rgba(165, 140, 110, 0.85);
+      box-shadow: 0 18px 45px rgba(130, 110, 85, 0.14);
     }
 
     .project-card:hover {
@@ -1798,8 +1827,8 @@
     }
 
     [data-theme="light"] .pcard-thumb-wrap {
-      border-color: rgba(8, 145, 178, 0.25);
-      box-shadow: 0 8px 22px rgba(8, 145, 178, 0.12);
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 8px 22px rgba(130, 110, 85, 0.08);
     }
 
     .pcard-header {
@@ -1856,8 +1885,8 @@
     }
 
     [data-theme="light"] .pcard-stats-box {
-      background: #f1f5f9;
-      border-color: rgba(8, 145, 178, 0.2);
+      background: #f4eee2;
+      border-color: rgba(190, 170, 142, 0.35);
     }
 
     .pcard-stat-item h6 {
@@ -1892,8 +1921,8 @@
     }
 
     [data-theme="light"] .pcard-tags span {
-      background: #ffffff;
-      border-color: rgba(8, 145, 178, 0.25);
+      background: #faf6ee;
+      border-color: rgba(190, 170, 142, 0.35);
     }
 
     .pcard-links-row {
@@ -1928,11 +1957,11 @@
     }
 
     [data-theme="light"] .exp-section {
-      background-color: #f1f5f9;
+      background-color: #ede8df;
       background-image:
-        radial-gradient(circle at 15% 45%, rgba(8, 145, 178, 0.15) 0%, transparent 60%),
-        repeating-linear-gradient(90deg, transparent, transparent 38px, rgba(8, 145, 178, 0.11) 39px, rgba(8, 145, 178, 0.11) 40px),
-        linear-gradient(180deg, rgba(8, 145, 178, 0.07) 1px, transparent 1px);
+        radial-gradient(circle at 15% 45%, rgba(196, 172, 142, 0.2) 0%, transparent 60%),
+        repeating-linear-gradient(90deg, transparent, transparent 38px, rgba(168, 148, 126, 0.12) 39px, rgba(168, 148, 126, 0.12) 40px),
+        linear-gradient(180deg, rgba(168, 148, 126, 0.08) 1px, transparent 1px);
       background-size: 100% 100%, 80px 100%, 100% 60px;
     }
 
@@ -1971,7 +2000,7 @@
     }
 
     [data-theme="light"] .timeline-dot {
-      background: #ffffff;
+      background: #faf6ee;
     }
 
     .timeline-card {
@@ -1984,9 +2013,13 @@
     }
 
     [data-theme="light"] .timeline-card {
-      background: rgba(255, 255, 255, 0.95);
-      border-color: rgba(8, 145, 178, 0.3);
-      box-shadow: 0 12px 35px rgba(8, 145, 178, 0.1);
+      background: rgba(253, 250, 244, 0.96);
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 14px 35px rgba(130, 110, 85, 0.08);
+    }
+
+    [data-theme="light"] .timeline-card:hover {
+      border-color: rgba(165, 140, 110, 0.85);
     }
 
     .timeline-head-row {
@@ -2064,12 +2097,12 @@
     }
 
     [data-theme="light"] .edu-section {
-      background-color: #f8fafc;
+      background-color: #f7f4ee;
       background-image:
-        radial-gradient(circle at 50% 100%, rgba(8, 145, 178, 0.15) 0%, transparent 65%),
-        linear-gradient(60deg, rgba(8, 145, 178, 0.1) 1px, transparent 1px),
-        linear-gradient(-60deg, rgba(8, 145, 178, 0.1) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(8, 145, 178, 0.08) 1px, transparent 1px);
+        radial-gradient(circle at 50% 100%, rgba(196, 172, 142, 0.22) 0%, transparent 65%),
+        linear-gradient(60deg, rgba(168, 148, 126, 0.12) 1px, transparent 1px),
+        linear-gradient(-60deg, rgba(168, 148, 126, 0.12) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(168, 148, 126, 0.09) 1px, transparent 1px);
       background-size: 100% 100%, 48px 83.14px, 48px 83.14px, 100% 41.57px;
     }
 
@@ -2089,9 +2122,13 @@
     }
 
     [data-theme="light"] .edu-card {
-      background: rgba(255, 255, 255, 0.95);
-      border-color: rgba(8, 145, 178, 0.3);
-      box-shadow: 0 12px 35px rgba(8, 145, 178, 0.1);
+      background: rgba(253, 250, 244, 0.96);
+      border-color: rgba(190, 170, 142, 0.45);
+      box-shadow: 0 14px 35px rgba(130, 110, 85, 0.08);
+    }
+
+    [data-theme="light"] .edu-card:hover {
+      border-color: rgba(165, 140, 110, 0.85);
     }
 
     .edu-title {
@@ -2145,9 +2182,9 @@
     }
 
     [data-theme="light"] .edu-capstone-box {
-      background: #f8fafc;
-      border-color: rgba(8, 145, 178, 0.3);
-      box-shadow: 0 4px 16px rgba(8, 145, 178, 0.08);
+      background: #f4eee2;
+      border-color: rgba(190, 170, 142, 0.4);
+      box-shadow: 0 4px 16px rgba(130, 110, 85, 0.06);
     }
 
     .edu-capstone-header {
@@ -2222,9 +2259,9 @@
     }
 
     [data-theme="light"] .capstone-tag {
-      background: #ffffff;
+      background: #faf6ee;
       color: #1e293b !important;
-      border-color: rgba(8, 145, 178, 0.25);
+      border-color: rgba(190, 170, 142, 0.35);
     }
 
     .capstone-drive-btn {
@@ -2253,9 +2290,9 @@
     }
 
     [data-theme="light"] .capstone-drive-btn {
-      color: #0891b2;
-      border-color: rgba(8, 145, 178, 0.4);
-      background: rgba(8, 145, 178, 0.1);
+      color: #8c6d48;
+      border-color: rgba(190, 170, 142, 0.45);
+      background: rgba(244, 238, 226, 0.75);
     }
 
     [data-theme="light"] .capstone-drive-btn:hover {
@@ -2279,9 +2316,13 @@
     }
 
     [data-theme="light"] .cert-list-item {
-      background: #ffffff;
-      border-color: rgba(8, 145, 178, 0.25);
-      box-shadow: 0 3px 10px rgba(8, 145, 178, 0.06);
+      background: #faf6ee;
+      border-color: rgba(190, 170, 142, 0.35);
+      box-shadow: 0 3px 10px rgba(130, 110, 85, 0.05);
+    }
+
+    [data-theme="light"] .cert-list-item:hover {
+      border-color: rgba(165, 140, 110, 0.85);
     }
 
     .cert-list-item:hover {
@@ -2374,8 +2415,8 @@
     }
 
     [data-theme="light"] footer.site-footer {
-      background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
-      border-top: 1px solid rgba(8, 145, 178, 0.3);
+      background: linear-gradient(180deg, #f7f4ee 0%, #e5dfd3 100%);
+      border-top: 1px solid rgba(168, 148, 126, 0.28);
       color: #000000 !important;
     }
 
@@ -2501,7 +2542,7 @@
      SECTION 1: LANDING HERO (Edge-Aligned Translucent Slender Cards)
 ======================================================== -->
   <section class="hero-travel-wrapper" id="hero">
-    <!-- Triple Monitor Wallpaper with Native Lighting: Crimson in Dark, Aqua in Light -->
+    <!-- Triple Monitor Wallpaper with Native Lighting: Crimson in Dark, Warm Beige in Light -->
     <img src="inspiration/triple_monitor_crimson.jpg" alt="Triple Monitor Coding Setup" class="hero-bg-media"
       id="heroBg">
     <div class="hero-ambient-glow" id="heroGlow"></div>
@@ -3676,12 +3717,12 @@
 
         if (heroBg) {
           heroBg.src = theme === 'light'
-            ? "inspiration/triple_monitor_aqua.jpg"
+            ? "inspiration/triple_monitor_beige.jpg"
             : "inspiration/triple_monitor_crimson.jpg";
         }
         if (archBg) {
           archBg.src = theme === 'light'
-            ? "inspiration/modern_desk_aqua.jpg"
+            ? "inspiration/modern_desk_beige.jpg"
             : "inspiration/modern_coding_desk.jpg";
         }
 
@@ -3823,13 +3864,13 @@
           card.style.zIndex = 100 - absDiff * 10;
 
           if (isCenter) {
-            card.style.borderColor = 'var(--green-glow)';
+            card.style.borderColor = isLight ? 'rgba(165, 140, 110, 0.85)' : 'var(--green-glow)';
             card.style.boxShadow = isLight
-              ? '0 25px 60px rgba(8, 145, 178, 0.35), 0 0 25px rgba(6, 182, 212, 0.45)'
+              ? '0 25px 60px rgba(130, 110, 85, 0.18), 0 0 25px rgba(220, 200, 170, 0.45)'
               : '0 30px 70px rgba(0,0,0,0.95), 0 0 35px rgba(225, 29, 72, 0.45)';
           } else {
-            card.style.borderColor = isLight ? 'rgba(8, 145, 178, 0.25)' : 'rgba(255, 255, 255, 0.16)';
-            card.style.boxShadow = isLight ? '0 15px 35px rgba(8, 145, 178, 0.12)' : '0 20px 45px rgba(0,0,0,0.65)';
+            card.style.borderColor = isLight ? 'rgba(190, 170, 142, 0.45)' : 'rgba(255, 255, 255, 0.16)';
+            card.style.boxShadow = isLight ? '0 15px 35px rgba(130, 110, 85, 0.08)' : '0 20px 45px rgba(0,0,0,0.65)';
           }
         });
       }
